@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-40px);
+		transform: translateY(-40px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-30px);
+		transform: translateY(-30px);
+	}
+}
+
+@keyframes bounce2 {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	40% {
+		-webkit-transform: translateX(-40px);
+		transform: translateX(-40px);
+	}
+
+	80% {
+		-webkit-transform: translateX(-30px);
+		transform: translateX(-30px);
+	}
+}
+
+@keyframes scaling {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+
+	40% {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+
+ 40% {
+		-webkit-transform: scale(1.6);
+		transform: scale(1.6);
+	}
+
+}
+
+.banner-section{
+ width: 100%;
+ height: 700px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ background-color: #006953;
+ overflow: hidden;
+}
+
+.d1{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #F7B013;
+ margin-bottom: 20px;
+ animation: bounce 1.5s linear;
+ overflow: hidden;
+ 
+}
+
+.d1 h1{
+ padding-right: 25px;
+ font-family: 'Dela Gothic One';
+ letter-spacing: 2px;
+ font-size: 50px;
+}
+
+.d2{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #F7B013;
+ margin-bottom: 20px;
+ animation: scaling 1.5s linear;
+ overflow: hidden;
+}
+
+.d2 h1{
+ padding-right: 30px;
+ font-family: 'Dela Gothic One';
+ letter-spacing: 2px;
+ font-size: 50px;
+}
+
+.d3{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #F7B013;
+ margin-bottom: 20px;
+ animation: bounce2 1.5s linear;
+ overflow: hidden;
+}
+
+.d3 h1{
+ padding-right: 30px;
+ font-family: 'Dela Gothic One';
+ letter-spacing: 2px;
+ font-size: 50px;
+}
+
+.d4{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #F7B013;
+ margin-bottom: 20px;
+ animation: scaling 1.5s linear;
+ overflow: hidden;
+}
+
+.d4 h1{
+ padding-right: 30px;
+ font-family: 'Dela Gothic One';
+ letter-spacing: 2px;
+ font-size: 50px;
+}
+
+/* TEXT ANIMATIONS */
+.t1{
+ position: relative;
+  /* To hide the li, use color as transparent */
+ color: transparent;
+  overflow: hidden;
+ transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+ 
+}
+
+.t1:before,
+.t1:after {
+  /* Attr() : To get the value from the attribute */
+  content: attr(data-val);
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0%;
+  
+}
+
+.t1:after {
+  left: 0%;
+  transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  color: #F7B013;
+}
+
+.t1:before {
+  opacity: 0;
+  /* to hidden content */
+  left: -100%;
+ 
+  transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 1.955);
+}
+
+.t1:hover:before {
+  /* Bring the content into frame */
+  left: 0%;
+  opacity: 1;
+  color: #F7B013;
+}
+
+.t1:hover:after {
+  /* Content hidden by pusing to left 100% */
+  left: 100%;
+  opacity: 0;
+}
+
+/* ************* t2 ********* */
+
+.t2{
+ display: block;
+ position: relative;
+  /* To hide the li, use color as transparent */
+  color: transparent;
+  text-transform: uppercase;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  text-align: center;
+  /* To hide any component outside the main frame */
+  overflow: hidden;
+  
+}
+
+.t2:before,
+.t2:after {
+  /* Attr() : To get the value from the attribute */
+  content: attr(data-val);
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.t2:after {
+  left: 0%;
+  color: #F7B013;
+}
+
+.t2:before {
+  opacity: 0;
+  /* to hidden content */
+  top: -100%;
+}
+
+.t2:hover:before {
+  /* Bring the content into frame */
+  top: 0%;
+  opacity: 1;
+  color: #F7B013;
+}
+
+.t2:hover:after {
+  /* Content hidden by pushing to left 100% */
+  left: 100%;
+  opacity: 0;
+}
+
+/* ****** t3 *********** */
+.t3{
+ display: block;
+ position: relative;
+  /* To hide the li, use color as transparent */
+  color: transparent;
+  text-transform: uppercase;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  text-align: center;
+  /* To hide any component outside the main frame */
+  overflow: hidden;
+}
+
+.t3:before,
+.t3:after {
+  /* Attr() : To get the value from the attribute */
+  content: attr(data-val);
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  left: 0;
+  box-shadow: 0 8px 6px -6px black;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+
+.t3:after {
+  color: #F7B013;
+  transition: all 0.4s 100ms ease;
+}
+
+.t3:before {
+  opacity: 0;
+  top: -100%;
+  transition: all 0.4s ease;
+}
+
+.t3:hover:before {
+  top: 0%;
+  opacity: 1;
+  color: #F7B013;
+}
+
+.t3:hover:after {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+/* ****** t4 ********* */
+.t4{
+ display: block;
+ position: relative;
+  /* To hide the li, use color as transparent */
+  color: transparent;
+  text-transform: uppercase;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  text-align: center;
+  /* To hide any component outside the main frame */
+  overflow: hidden;
+}
+
+.t4:before,
+.t4:after {
+  /* Attr() : To get the value from the attribute */
+  content: attr(data-val);
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 1.955);
+}
+
+.t4:after {
+  left: 0%;
+  color: #F7B013;
+}
+
+.t4:hover:after {
+  /* Content hidden by pusing to left 100% */
+  left: -100%;
+}
+
+.t4:hover:before {
+  /* Bring the content into frame */
+  color: #fff;
+  left: 0;
+}
+
+/* **** t5 **** */
+.t5{
+ display: block;
+ position: relative;
+  /* To hide the li, use color as transparent */
+  text-transform: uppercase;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  text-align: center;
+  /* To hide any component outside the main frame */
+  overflow: hidden;
+}
+
+.t5:hover {
+
+	animation: bounce 1s;
+}
+
+/* ******* t6 ******** */
+.t6{
+ display: block;
+ position: relative;
+  /* To hide the li, use color as transparent */
+  text-transform: uppercase;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  text-align: center;
+  /* To hide any component outside the main frame */
+  overflow: hidden;
+}
+.t6:hover{
+ -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* ******* t7 *********** */
+.t7 {
+  height: 60%;
+  font-size: 18px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-transform: uppercase;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  color: #F7B013;
+}
+
+.t7::before,
+.t7::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+}
+
+.t7::before,
+.t7::after {
+  border: 0px solid transparent;
+  width: 0%;
+  height: 0%;
+  bottom: 0%;
+  right: 0%;
+}
+
+/* 'before' sudo element animates the bottom and left borders */
+.t7::before {
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+}
+
+/* 'after' sudo element animates the top and right borders */
+.t7::after {
+  border-top-width: 2px;
+  border-right-width: 2px;
+}
+
+.t7:hover {
+  color: #fff;
+}
+
+/* On Hover border color is changed from transparent to the #fff */
+/* Width and a height of the sudo elements are increased from zero to 100% */
+.t7:hover::before,
+.t7:hover::after {
+  border-color: #fff;
+  transition: border-color 0s, width 0.3s, height 0.3s;
+  width: 100%;
+  height: 100%;
+}
+
+/* Delay is added to the height animation of the 'before' sudo element */
+.t7:hover::before {
+  transition-delay: 0s, 0s, 0.3s;
+}
+
+/* Delay is added to the width animation of the 'after' sudo element */
+.t7:hover::after {
+  transition-delay: 0s, 0.3s, 0s;
+}
+
+/* ******* t8 ******* */
+.t8 {
+  height: 60%;
+  font-size: 18px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-transform: uppercase;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  color: #F7B013;
+}
+
+.t8::before,
+.t8::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+}
+
+.t8 {
+  padding: 10px 20px;
+}
+
+.t8::before,
+.t8:after {
+  width: 80%;
+  height: 80%;
+  opacity: 1;
+  transition: all 0.3s cubic-bezier(0.075, 0.83, 0.165, 1);
+  border: none;
+  border-radius: 20px;
+}
+
+/* On Hover the 'before' sudo element's is added an opacity of 0 and the */
+/* element is scaled to 2 times. */
+.t8:hover:before {
+  animation: anim3 500ms ease forwards infinite;
+  border: 1px solid orange;
+}
+
+/* Delay is added to 'after' sudo element */
+.t8:hover:after {
+  animation: anim3 500ms 150ms ease forwards infinite;
+  border: 1px solid orange;
+}
+
+/* ******* t9 ******** */
+
+.t9 {
+  height: 60px;
+  font-size: 25px;
+  position: relative;
+  text-transform: uppercase;
+  margin: 20px;
+  padding: 10px 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.t9 {
+  padding: 10px 40px;
+  color: #F7B013;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.t9 span {
+  z-index: 100;
+  color: #F7B013;
+}
+
+.t9::before,
+.t9::after {
+  content: "";
+  position: absolute;
+  display: block;
+}
+
+.t9:before {
+  height: 100%;
+  width: 0;
+  right: 0;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transition: all 500ms cubic-bezier(0.075, 0.81, 0.165, 1);
+}
+
+.t9:after {
+  background-color: transparent;
+  height: calc(100% - 4px);
+  width: 0;
+  left: 0;
+  transition: all 1s cubic-bezier(0.075, 0.81, 0.165, 1);
+}
+
+/* On hover the 'before' and 'after' element's width is increased from zero to 100%, this caused the 'before' elements's top and bottom borders to increase the width from 0 to 100%, in 'after' element the increase  cause the background fill effect*/
+.t9:hover:before {
+  width: 100%;
+}
+
+.t9:hover:after {
+  width: 100%;
+  
+}
+
+
+@keyframes anim3 {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    border-color: #fff;
+  }
+
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+
+@media (max-width: 600px){
+ .d1 h1{
+ padding-right: 25px;
+ font-family: 'Dela Gothic One';
+ letter-spacing: 0px;
+ font-size: 14px;
+}
+
+.d2 h1{
+ padding-right: 20px;
+ font-family: 'Dela Gothic One';
+ letter-spacing: 1px;
+ font-size: 14px;
+}
+
+.d3 h1{
+ padding-right: 20px;
+ font-family: 'Dela Gothic One';
+ letter-spacing: 1px;
+ font-size: 14px;
+}
+
+.d4 h1{
+ padding-right: 20px;
+ font-family: 'Dela Gothic One';
+ letter-spacing: 1px;
+ font-size: 14px;
+}
+.d3{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #F7B013;
+ margin-bottom: 0px;
+ animation: bounce2 1.5s linear;
+ overflow: hidden;
+}
+}
