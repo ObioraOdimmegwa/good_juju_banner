@@ -1,190 +1,452 @@
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+/** @format */
 
-*{
- padding: 0;
- margin: 0;
- box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@keyframes bounce {
-	0%, 20%, 60%, 100% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	}
-
-	40% {
-		-webkit-transform: translateY(-40px);
-		transform: translateY(-40px);
-	}
-
-	80% {
-		-webkit-transform: translateY(-30px);
-		transform: translateY(-30px);
-	}
+.banner-section {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #006953;
+  overflow: hidden;
 }
 
-@keyframes bounce2 {
-	0%, 20%, 60%, 100% {
-		-webkit-transform: translateX(0);
-		transform: translateX(0);
-	}
-
-	40% {
-		-webkit-transform: translateX(-40px);
-		transform: translateX(-40px);
-	}
-
-	80% {
-		-webkit-transform: translateX(-30px);
-		transform: translateX(-30px);
-	}
+.d1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f7b013;
+  margin-bottom: 50px;
+  /*animation: bounce 1.5s linear*/
 }
 
-@keyframes scaling {
-	0%, 20%, 60%, 100% {
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-
-	40% {
-		-webkit-transform: scale(1.2);
-		transform: scale(1.2);
-	}
-
- 40% {
-		-webkit-transform: scale(1.6);
-		transform: scale(1.6);
-	}
-
+.d1 img {
+  padding-right: 25px;
+  height: 100%;
+  overflow: hidden;
 }
 
-.banner-section{
- width: 100%;
- height: 700px;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- background-color: #006953;
- overflow: hidden;
+.d2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f7b013;
+  margin-bottom: 0px;
+  overflow: hidden;
 }
 
-.d1{
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- color: #F7B013;
- margin-bottom: 50px;
- /*animation: bounce 1.5s linear*/;
- 
+.d2 img {
+  padding-right: 25px;
 }
 
-.d1 img{
- padding-right: 25px;
- 
+.d3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  overflow: hidden;
 }
 
-.d2{
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- color: #F7B013;
- margin-bottom: 0px;
- overflow: hidden;
+.d3 img {
+  padding-right: 25px;
 }
 
-.d2 img{
- padding-right: 25px;
+.d4 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f7b013;
+  margin-bottom: 20px;
+  overflow: hidden;
 }
 
-.d3{
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- margin-bottom: 0px;
- overflow: hidden;
-}
-
-.d3 img{
- padding-right: 25px;
-}
-
-.d4{
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- color: #F7B013;
- margin-bottom: 20px;
- overflow: hidden;
-}
-
-.d4 img{
- padding-right: 25px;
+.d4 img {
+  padding-right: 25px;
 }
 
 /* IMAGE ANIMATIONS */
-.i1{
- animation: bounce2 1.5s linear;
+.i1 {
+  animation: bounce2 1.5s linear;
 }
 
-.i2{
- animation: bounce 1.5s linear;
+.i2 {
+  animation: bounce 1.5s linear;
 }
 
-.i3{
- animation: anim3 1s linear;
+.i3 {
+  animation: anim3 1s linear;
 }
 
-.w3-spin{animation:w3-spin 2s linear}@keyframes w3-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
-.w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
-.w3-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
-.w3-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
-.w3-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
-.w3-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
-.w3-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
-.w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
-
-
-@media (max-width: 600px){
- .d1 h1{
- padding-right: 25px;
- font-family: 'Dela Gothic One';
- letter-spacing: 0px;
- font-size: 14px;
+.w3-spin {
+  animation: w3-spin 2s linear;
+}
+.w3-spin:hover {
+  animation: w3-spin 2s linear;
+}
+@keyframes w3-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+.w3-animate-fading {
+  animation: fading 10s infinite;
+}
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.w3-animate-opacity {
+  animation: opac 0.8s;
+}
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.d2 h1{
- padding-right: 20px;
- font-family: 'Dela Gothic One';
- letter-spacing: 1px;
- font-size: 14px;
+.w3-animate-top {
+  position: relative;
+  animation: animatetop 0.4s;
 }
 
-.d3 h1{
- padding-right: 20px;
- font-family: 'Dela Gothic One';
- letter-spacing: 1px;
- font-size: 14px;
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
-.d4 h1{
- padding-right: 20px;
- font-family: 'Dela Gothic One';
- letter-spacing: 1px;
- font-size: 14px;
+.w3-animate-left {
+  position: relative;
+  animation: animateleft 0.4s linear;
 }
-.d3{
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- color: #F7B013;
- margin-bottom: 0px;
- animation: bounce2 1.5s linear;
- overflow: hidden;
+
+@keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
 }
+@keyframes animateleft2 {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+.w3-animate-right {
+  position: relative;
+  animation: animateright 0.4s;
+}
+.w3-animate-right:hover {
+  position: relative;
+  animation: animateright 0.4s;
+}
+@keyframes animateright {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+.w3-animate-bottom {
+  position: relative;
+  animation: animatebottom 0.4s;
+}
+.w3-animate-bottom:hover {
+  position: relative;
+  animation: animatebottom 0.4s;
+}
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+.w3-animate-zoom {
+  animation: animatezoom 0.6s;
+}
+.w3-animate-zoom:hover {
+  animation: animatezoom 0.6s;
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* ******** IMAGE HOVER ANIMATIONS ********* */
+#welcome:hover {
+  animation: hover5 1s linear forwards;
+}
+
+#to:hover {
+  animation: hover2 1s linear forwards;
+}
+
+#the:hover {
+  position: relative;
+  animation: hover3 1s linear forwards;
+}
+
+#most:hover {
+  position: relative;
+  animation: hover4 1s linear forwards;
+}
+
+#uplifting:hover {
+  position: relative;
+  animation: hover5 1s linear forwards;
+}
+
+#personal:hover {
+  position: relative;
+  animation: hover4 1s linear forwards;
+}
+
+#training:hover {
+  position: relative;
+  animation: hover2 1s linear forwards;
+}
+
+#gym:hover {
+  position: relative;
+  animation: hover1 1s linear forwards;
+}
+
+#in:hover {
+  position: relative;
+  animation: hover3 1s linear forwards;
+}
+
+#kul:hover {
+  position: relative;
+  animation: hover5 1s linear forwards;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes slideLeft {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes bounce2 {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  40% {
+    -webkit-transform: translateX(-40px);
+    transform: translateX(-40px);
+  }
+
+  80% {
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+}
+
+@keyframes hover1 {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes hover2 {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+}
+
+@keyframes hover3 {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  40% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+  }
+}
+
+@keyframes hover4 {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+
+@keyframes hover5 {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  40% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+  }
+}
+
+@keyframes scaling {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  40% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  40% {
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+  }
+}
+
+@media (max-width: 600px) {
+  .d1 h1 {
+    padding-right: 25px;
+    font-family: "Dela Gothic One";
+    letter-spacing: 0px;
+    font-size: 14px;
+  }
+
+  .d2 h1 {
+    padding-right: 20px;
+    font-family: "Dela Gothic One";
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+
+  .d3 h1 {
+    padding-right: 20px;
+    font-family: "Dela Gothic One";
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+
+  .d4 h1 {
+    padding-right: 20px;
+    font-family: "Dela Gothic One";
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+  .d3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f7b013;
+    margin-bottom: 0px;
+    animation: bounce2 1.5s linear;
+    overflow: hidden;
+  }
 }
