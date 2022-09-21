@@ -75,17 +75,14 @@
  justify-content: center;
  align-items: center;
  color: #F7B013;
- margin-bottom: 20px;
- animation: bounce 1.5s linear;
- overflow: hidden;
+ margin-bottom: 50px;
+ /*animation: bounce 1.5s linear*/;
  
 }
 
-.d1 h1{
+.d1 img{
  padding-right: 25px;
- font-family: 'Dela Gothic One';
- letter-spacing: 2px;
- font-size: 50px;
+ 
 }
 
 .d2{
@@ -94,16 +91,12 @@
  justify-content: center;
  align-items: center;
  color: #F7B013;
- margin-bottom: 20px;
- animation: scaling 1.5s linear;
+ margin-bottom: 0px;
  overflow: hidden;
 }
 
-.d2 h1{
- padding-right: 30px;
- font-family: 'Dela Gothic One';
- letter-spacing: 2px;
- font-size: 50px;
+.d2 img{
+ padding-right: 25px;
 }
 
 .d3{
@@ -111,17 +104,12 @@
  display: flex;
  justify-content: center;
  align-items: center;
- color: #F7B013;
- margin-bottom: 20px;
- animation: bounce2 1.5s linear;
+ margin-bottom: 0px;
  overflow: hidden;
 }
 
-.d3 h1{
- padding-right: 30px;
- font-family: 'Dela Gothic One';
- letter-spacing: 2px;
- font-size: 50px;
+.d3 img{
+ padding-right: 25px;
 }
 
 .d4{
@@ -131,429 +119,34 @@
  align-items: center;
  color: #F7B013;
  margin-bottom: 20px;
- animation: scaling 1.5s linear;
  overflow: hidden;
 }
 
-.d4 h1{
- padding-right: 30px;
- font-family: 'Dela Gothic One';
- letter-spacing: 2px;
- font-size: 50px;
+.d4 img{
+ padding-right: 25px;
 }
 
-/* TEXT ANIMATIONS */
-.t1{
- position: relative;
-  /* To hide the li, use color as transparent */
- color: transparent;
-  overflow: hidden;
- transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
- 
+/* IMAGE ANIMATIONS */
+.i1{
+ animation: bounce2 1.5s linear;
 }
 
-.t1:before,
-.t1:after {
-  /* Attr() : To get the value from the attribute */
-  content: attr(data-val);
-  display: block;
-  position: absolute;
-  height: 100%;
-  top: 0%;
-  
+.i2{
+ animation: bounce 1.5s linear;
 }
 
-.t1:after {
-  left: 0%;
-  transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  color: #F7B013;
+.i3{
+ animation: anim3 1s linear;
 }
 
-.t1:before {
-  opacity: 0;
-  /* to hidden content */
-  left: -100%;
- 
-  transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 1.955);
-}
-
-.t1:hover:before {
-  /* Bring the content into frame */
-  left: 0%;
-  opacity: 1;
-  color: #F7B013;
-}
-
-.t1:hover:after {
-  /* Content hidden by pusing to left 100% */
-  left: 100%;
-  opacity: 0;
-}
-
-/* ************* t2 ********* */
-
-.t2{
- display: block;
- position: relative;
-  /* To hide the li, use color as transparent */
-  color: transparent;
-  text-transform: uppercase;
-  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  text-align: center;
-  /* To hide any component outside the main frame */
-  overflow: hidden;
-  
-}
-
-.t2:before,
-.t2:after {
-  /* Attr() : To get the value from the attribute */
-  content: attr(data-val);
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-
-.t2:after {
-  left: 0%;
-  color: #F7B013;
-}
-
-.t2:before {
-  opacity: 0;
-  /* to hidden content */
-  top: -100%;
-}
-
-.t2:hover:before {
-  /* Bring the content into frame */
-  top: 0%;
-  opacity: 1;
-  color: #F7B013;
-}
-
-.t2:hover:after {
-  /* Content hidden by pushing to left 100% */
-  left: 100%;
-  opacity: 0;
-}
-
-/* ****** t3 *********** */
-.t3{
- display: block;
- position: relative;
-  /* To hide the li, use color as transparent */
-  color: transparent;
-  text-transform: uppercase;
-  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  text-align: center;
-  /* To hide any component outside the main frame */
-  overflow: hidden;
-}
-
-.t3:before,
-.t3:after {
-  /* Attr() : To get the value from the attribute */
-  content: attr(data-val);
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0%;
-  left: 0;
-  box-shadow: 0 8px 6px -6px black;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
-}
-
-.t3:after {
-  color: #F7B013;
-  transition: all 0.4s 100ms ease;
-}
-
-.t3:before {
-  opacity: 0;
-  top: -100%;
-  transition: all 0.4s ease;
-}
-
-.t3:hover:before {
-  top: 0%;
-  opacity: 1;
-  color: #F7B013;
-}
-
-.t3:hover:after {
-  transform: translateY(100%);
-  opacity: 0;
-}
-
-/* ****** t4 ********* */
-.t4{
- display: block;
- position: relative;
-  /* To hide the li, use color as transparent */
-  color: transparent;
-  text-transform: uppercase;
-  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  text-align: center;
-  /* To hide any component outside the main frame */
-  overflow: hidden;
-}
-
-.t4:before,
-.t4:after {
-  /* Attr() : To get the value from the attribute */
-  content: attr(data-val);
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 1.955);
-}
-
-.t4:after {
-  left: 0%;
-  color: #F7B013;
-}
-
-.t4:hover:after {
-  /* Content hidden by pusing to left 100% */
-  left: -100%;
-}
-
-.t4:hover:before {
-  /* Bring the content into frame */
-  color: #fff;
-  left: 0;
-}
-
-/* **** t5 **** */
-.t5{
- display: block;
- position: relative;
-  /* To hide the li, use color as transparent */
-  text-transform: uppercase;
-  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  text-align: center;
-  /* To hide any component outside the main frame */
-  overflow: hidden;
-}
-
-.t5:hover {
-
-	animation: bounce 1s;
-}
-
-/* ******* t6 ******** */
-.t6{
- display: block;
- position: relative;
-  /* To hide the li, use color as transparent */
-  text-transform: uppercase;
-  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  text-align: center;
-  /* To hide any component outside the main frame */
-  overflow: hidden;
-}
-.t6:hover{
- -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-/* ******* t7 *********** */
-.t7 {
-  height: 60%;
-  font-size: 18px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  text-transform: uppercase;
-  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  color: #F7B013;
-}
-
-.t7::before,
-.t7::after {
-  content: "";
-  pointer-events: none;
-  position: absolute;
-}
-
-.t7::before,
-.t7::after {
-  border: 0px solid transparent;
-  width: 0%;
-  height: 0%;
-  bottom: 0%;
-  right: 0%;
-}
-
-/* 'before' sudo element animates the bottom and left borders */
-.t7::before {
-  border-bottom-width: 2px;
-  border-left-width: 2px;
-}
-
-/* 'after' sudo element animates the top and right borders */
-.t7::after {
-  border-top-width: 2px;
-  border-right-width: 2px;
-}
-
-.t7:hover {
-  color: #fff;
-}
-
-/* On Hover border color is changed from transparent to the #fff */
-/* Width and a height of the sudo elements are increased from zero to 100% */
-.t7:hover::before,
-.t7:hover::after {
-  border-color: #fff;
-  transition: border-color 0s, width 0.3s, height 0.3s;
-  width: 100%;
-  height: 100%;
-}
-
-/* Delay is added to the height animation of the 'before' sudo element */
-.t7:hover::before {
-  transition-delay: 0s, 0s, 0.3s;
-}
-
-/* Delay is added to the width animation of the 'after' sudo element */
-.t7:hover::after {
-  transition-delay: 0s, 0.3s, 0s;
-}
-
-/* ******* t8 ******* */
-.t8 {
-  height: 60%;
-  font-size: 18px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  text-transform: uppercase;
-  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  color: #F7B013;
-}
-
-.t8::before,
-.t8::after {
-  content: "";
-  pointer-events: none;
-  position: absolute;
-}
-
-.t8 {
-  padding: 10px 20px;
-}
-
-.t8::before,
-.t8:after {
-  width: 80%;
-  height: 80%;
-  opacity: 1;
-  transition: all 0.3s cubic-bezier(0.075, 0.83, 0.165, 1);
-  border: none;
-  border-radius: 20px;
-}
-
-/* On Hover the 'before' sudo element's is added an opacity of 0 and the */
-/* element is scaled to 2 times. */
-.t8:hover:before {
-  animation: anim3 500ms ease forwards infinite;
-  border: 1px solid orange;
-}
-
-/* Delay is added to 'after' sudo element */
-.t8:hover:after {
-  animation: anim3 500ms 150ms ease forwards infinite;
-  border: 1px solid orange;
-}
-
-/* ******* t9 ******** */
-
-.t9 {
-  height: 60px;
-  font-size: 25px;
-  position: relative;
-  text-transform: uppercase;
-  margin: 20px;
-  padding: 10px 40px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-
-.t9 {
-  padding: 10px 40px;
-  color: #F7B013;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.t9 span {
-  z-index: 100;
-  color: #F7B013;
-}
-
-.t9::before,
-.t9::after {
-  content: "";
-  position: absolute;
-  display: block;
-}
-
-.t9:before {
-  height: 100%;
-  width: 0;
-  right: 0;
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  transition: all 500ms cubic-bezier(0.075, 0.81, 0.165, 1);
-}
-
-.t9:after {
-  background-color: transparent;
-  height: calc(100% - 4px);
-  width: 0;
-  left: 0;
-  transition: all 1s cubic-bezier(0.075, 0.81, 0.165, 1);
-}
-
-/* On hover the 'before' and 'after' element's width is increased from zero to 100%, this caused the 'before' elements's top and bottom borders to increase the width from 0 to 100%, in 'after' element the increase  cause the background fill effect*/
-.t9:hover:before {
-  width: 100%;
-}
-
-.t9:hover:after {
-  width: 100%;
-  
-}
-
-
-@keyframes anim3 {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-
-  50% {
-    border-color: #fff;
-  }
-
-  100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
+.w3-spin{animation:w3-spin 2s linear}@keyframes w3-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.w3-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.w3-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.w3-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.w3-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.w3-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
 
 
 @media (max-width: 600px){
