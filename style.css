@@ -19,6 +19,11 @@
   overflow: hidden;
 }
 
+.banner-mobile{
+    display: none;
+
+  }
+
 .d1 {
   width: 100%;
   display: flex;
@@ -410,8 +415,8 @@
   }
 }
 
-@media (max-width: 600px) {
-  .banner-section.mobile{
+@media (max-width: 768px) {
+  .banner-mobile{
     width: 100%;
     height: 700px;
     display: flex;
@@ -425,43 +430,8 @@
   }
 
   .banner-section{
-    width: 100%;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #006953;
-    overflow: hidden;
     display: none;
 
   }
 }
 
-@media (max-width: 1000px) {
-  .banner-section.mobile{
-    width: 100%;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #006953;
-    overflow: hidden;
-    display: block;
-
-  }
-
-  .banner-section{
-    width: 100%;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #006953;
-    overflow: hidden;
-    display: none;
-
-  }
-}
